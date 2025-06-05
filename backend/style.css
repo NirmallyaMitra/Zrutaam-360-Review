@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 20px 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: orange;
+}
+.links {
+  margin: 30px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulk Mailer - Candidates</title>
+    <script>
+      let interval;
+      function startSending() {
+        document.getElementById("status").innerText = "Sending started...";
+        interval = setInterval(() => {
+          fetch("send_candidate.php")
+            .then((res) => res.json())
+            .then((data) => {
+              const div = document.createElement("div");
+              div.innerText = `${data.email} — ${data.status}`;
+              document.getElementById("results").appendChild(div);
+              if (data.done) {
+                clearInterval(interval);
+                document.getElementById("status").innerText =
+                  "✅ All emails sent.";
+              }
+            });
+        }, 5000); // every 5 seconds
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Bulk Email Sender - Candidates</h2>
+    <button onclick="startSending()">Send Emails</button>
+    <p id="status"></p>
+    <div id="results"></div>
+  </body>
+</html>

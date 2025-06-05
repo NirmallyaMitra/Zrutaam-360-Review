@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Under Maintenance</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f2f2f2;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      color: #555;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+
+    .spinner {
+      border: 6px solid #ccc;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <h1>Zrutaam will Be Back Soon</h1>
+  <p>
+    Our website is currently undergoing scheduled maintenance.<br/>
+    We apologize for the inconvenience and appreciate your patience.<br/>
+    Please check back shortly.
+  </p>
+</body>
+</html>
