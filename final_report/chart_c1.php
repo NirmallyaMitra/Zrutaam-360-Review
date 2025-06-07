@@ -154,6 +154,7 @@ function calculate_difference($a, $b)
   <!-- <link rel="stylesheet" href="chart.css" /> -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
     * {
       padding: 0;
       margin: 0;
@@ -407,7 +408,7 @@ function calculate_difference($a, $b)
       font-size: 12px;
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 900
+      font-weight: 900;
       font-style: normal;
     }
 
@@ -773,25 +774,26 @@ function calculate_difference($a, $b)
       color: #6387fd;
     }
 
-    .border12{
-	position: absolute;
-	top: 15px;
-	left: 15px;
-	z-index: 999999;
-	border: 1px solid black;
-	width: 20cm;
-      	height: 29cm;
-    }
-    .text-color{
-        color: white;
-        font-family: "Montserrat", sans-serif !important;
-        font-optical-sizing: auto !important;
-        font-weight: 400 !important;
-        font-style: normal !important;
+    .border12 {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 999999;
+      border: 1px solid black;
+      width: 20cm;
+      height: 29cm;
     }
 
-    .ov{
-	background-color: #6387fd;
+    .text-color {
+      color: white;
+      font-family: "Montserrat", sans-serif !important;
+      font-optical-sizing: auto !important;
+      font-weight: 400 !important;
+      font-style: normal !important;
+    }
+
+    .ov {
+      background-color: #6387fd;
     }
 
     /* ! ================================= END CHART BOTTOM ====================================== */
