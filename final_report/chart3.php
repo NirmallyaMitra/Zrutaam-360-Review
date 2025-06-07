@@ -115,7 +115,7 @@ while ($row2 = $result2->fetch_assoc()) {
     case 'MANAGER':
       $supervisor_highest[] = $category;
       break;
-    case 'DIRECT REPOTEE':
+    case 'DIRECT REPORTEE':
       $team_member_highest[] = $category;
       break;
   }
