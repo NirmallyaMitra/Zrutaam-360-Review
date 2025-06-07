@@ -155,7 +155,7 @@ $result10 = $stmt10->get_result()->fetch_assoc();
 </head>
 
 <body>
-<div class="border12"></div>
+  <div class="border12"></div>
   <div class="main-container">
     <div class="heading">
       <strong class="heading1">[<?php echo $var_name ?>]</strong>

@@ -414,38 +414,38 @@ function calculate_difference($a, $b)
 
     .level-1 {
       position: absolute;
-      top: 50px;
+      top: 85px;
       left: 325px;
     }
 
     .level-2 {
       position: absolute;
-      top: 64px;
-      left: 385px;
+      top: 94px;
+      left: 397px;
     }
 
     .level-3 {
       position: absolute;
-      top: 50px;
-      left: 450px;
+      top: 95px;
+      left: 457px;
     }
 
     .level-4 {
       position: absolute;
-      top: 64px;
-      left: 510px;
+      top: 95px;
+      left: 516px;
     }
 
     .level-5 {
       position: absolute;
-      top: 50px;
-      left: 575px;
+      top: 85px;
+      left: 567px;
     }
 
     .level-6 {
       position: absolute;
       top: 55px;
-      left: 625px;
+      left: 610px;
     }
 
     .level-7 {

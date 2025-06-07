@@ -157,11 +157,11 @@ $result10 = $stmt10->get_result()->fetch_assoc();
 </head>
 
 <body>
-<div class="border12"></div>
+  <div class="border12"></div>
   <div class="main-container">
     <div class="heading">
       <strong class="heading1">[<?php echo $var_name ?>]</strong>
-    </div>    
+    </div>
     <div class="text">
       <p class="bigger-text">EXECUTIVE SUMMARY</p>
       <p class="normal-text">
@@ -238,11 +238,11 @@ $result10 = $stmt10->get_result()->fetch_assoc();
     </div>
     <div class="upper-text">
       <p class="bold-n">N</p>
-      <div class="level level-1">Very Low Level 1</div>
-      <div class="level level-2">Low Level 2</div>
-      <div class="level level-3">Mod-erate Level 3</div>
-      <div class="level level-4">High Level 4</div>
-      <div class="level level-5">Very High Level 5</div>
+      <div class="level level-1">Very Low 1</div>
+      <div class="level level-2"> 2</div>
+      <div class="level level-3">3</div>
+      <div class="level level-4">4</div>
+      <div class="level level-5">Very High 5</div>
       <div class="level level-6">Gap from Self</div>
       <div class="level level-7">Range of Scores</div>
     </div>
