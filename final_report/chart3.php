@@ -109,13 +109,13 @@ while ($row2 = $result2->fetch_assoc()) {
   $category = $row2['category'];
 
   switch ($reviewer) {
-    case 'peer':
+    case 'PEER':
       $peer_highest[] = $category;
       break;
-    case 'supervisor':
+    case 'MANAGER':
       $supervisor_highest[] = $category;
       break;
-    case 'team-member':
+    case 'DIRECT REPOTEE':
       $team_member_highest[] = $category;
       break;
   }
@@ -193,13 +193,13 @@ while ($row3 = $result3->fetch_assoc()) {
   $category = $row3['category'];
 
   switch ($reviewer) {
-    case 'peer':
+    case 'PEER':
       $peer_lowest[] = $category;
       break;
-    case 'supervisor':
+    case 'MANAGER':
       $supervisor_lowest[] = $category;
       break;
-    case 'team-member':
+    case 'DIRECT REPORTEE':
       $team_member_lowest[] = $category;
       break;
   }
@@ -365,7 +365,7 @@ while ($row5 = $result5->fetch_assoc()) {
 </head>
 
 <body>
-<div class="border12"></div>
+  <div class="border12"></div>
   <div class="chart3-main-container">
     <div class="heading">
       <strong class="heading1">[<?php echo $var_name ?>]</strong>
@@ -399,35 +399,35 @@ while ($row5 = $result5->fetch_assoc()) {
       </tr>
       <tr>
         <td>
-          <?php printCategories('Supervisor', $supervisor_highest); ?>
+          <?php printCategories('MANAGER', $supervisor_highest); ?>
         </td>
         <td class="chart3-td-center">
-          <p class="chart3-bold"><b>Supervisor</b></p>
+          <p class="chart3-bold"><b>MANAGER</b></p>
         </td>
         <td>
-          <?php printCategories('Supervisor', $supervisor_lowest); ?>
+          <?php printCategories('MANAGER', $supervisor_lowest); ?>
         </td>
       </tr>
       <tr>
         <td>
-          <?php printCategories('Peer', $peer_highest); ?>
+          <?php printCategories('PEER', $peer_highest); ?>
         </td>
         <td class="chart3-td-center">
           <p class="chart3-bold"><b>Peer</b></p>
         </td>
         <td>
-          <?php printCategories('Peer', $peer_lowest); ?>
+          <?php printCategories('PEER', $peer_lowest); ?>
         </td>
       </tr>
       <tr>
         <td>
-          <?php printCategories('Team Member', $team_member_highest); ?>
+          <?php printCategories('DIRECT REPORTEE', $team_member_highest); ?>
         </td>
         <td class="chart3-td-center">
-          <p class="chart3-bold"><b>Team Member</b></p>
+          <p class="chart3-bold"><b>DIRECT REPORTEE</b></p>
         </td>
         <td>
-          <?php printCategories('Team Member', $team_member_lowest); ?>
+          <?php printCategories('DIRECT REPORTEE', $team_member_lowest); ?>
         </td>
       </tr>
 
