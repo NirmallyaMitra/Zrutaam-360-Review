@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+/* ================================WELCOME DIV==================================== */
+.main-container {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* border: 4px solid red; */
+}
+.welcome-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  /* border: 4px solid red; */
+}
+.welcome-to {
+  font-size: 24pt;
+}
+
+.welcome {
+  font-size: 24pt;
+}
+
+.strong {
+  font-size: 45pt;
+  color: #007aff;
+}
+.seond-text {
+  display: flex;
+  padding-left: 2rem;
+  font-weight: 100;
+  /* border: 4px solid red; */
+}
+.seond-text {
+  font-size: 12pt;
+  line-height: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  width: 35rem;
+}
+/* ================================END WELCOME DIV==================================== */
+
+/* ================================FORM DIV==================================== */
+.form-div {
+  padding: 1.5rem;
+  /* border: 4px solid red; */
+}
+form {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+.emp {
+  display: flex;
+  justify-content: center;
+  font-size: 12pt;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.label-text {
+  height: 2.3rem;
+  width: 25rem;
+  font-size: 12pt;
+  font-weight: bold;
+  padding-left: 8px;
+  border: 0.1px solid rgb(89, 89, 89);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  font-size: 16pt;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 25rem;
+  background-color: #007aff;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* ================================END FORM DIV==================================== */
+/* ===================================MEDIA============================================= */
+@media (max-width: 466px) {
+  .main-container {
+    display: grid;
+    justify-content: center;
+  }
+  .seond-text {
+    width: 20rem;
+  }
+  .emp {
+    display: flex;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: 600;
+    padding-bottom: 3px;
+  }
+  .label-text {
+    height: 2.3rem;
+    width: 20rem;
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    border: 0.1px solid black;
+  }
+  .btn {
+    font-size: 14pt;
+    font-weight: 700;
+    width: 20rem;
+  }
+}
+/* ======================================MAX WIDTH 376PX================================ */
+@media (max-width: 376px) {
+  .welcome-to {
+    font-size: 20pt;
+  }
+
+  .welcome {
+    font-size: 20pt;
+  }
+
+  .strong {
+    font-size: 30pt;
+  }
+  .seond-text {
+    padding-left: 0rem;
+    width: 15rem;
+  }
+  .form-div {
+    padding: 0rem;
+    padding-top: 1.5rem;
+    /* border: 4px solid red; */
+  }
+  .emp {
+    font-size: 12pt;
+    font-weight: 600;
+  }
+  .label-text {
+    height: 2.3rem;
+    width: 15rem;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  .btn {
+    font-size: 14pt;
+    font-weight: 700;
+    width: 15rem;
+  }
+}

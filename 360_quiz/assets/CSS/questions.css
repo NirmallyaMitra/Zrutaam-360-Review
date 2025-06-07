@@ -1,0 +1,327 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(213, 212, 212);
+  font-family: "Montserrat", sans-serif;
+}
+form {
+  display: grid;
+}
+.main-container {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  height: 38rem;
+  width: 40rem;
+  background-color: white;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+/* #form2 {
+  left: 1400px;
+}
+
+#form3 {
+  left: 1400px;
+}
+
+#form4 {
+  left: 1400px;
+}
+#form5 {
+  left: 1400px;
+}
+#form6 {
+  left: 1400px;
+}
+#form7 {
+  left: 1400px;
+}
+#form8 {
+  left: 1400px;
+}
+#form9 {
+  left: 1400px;
+}
+#form10 {
+  left: 1400px;
+}
+#form11 {
+  left: 1400px;
+}
+#form12 {
+  left: 1400px;
+} */
+
+.q {
+  font-size: 14pt;
+  font-weight: 600;
+  color: rgb(67, 67, 67);
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 100%;
+  gap: 1rem;
+}
+.label-font {
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+label {
+  display: flex;
+  align-items: center;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border: 3px solid #ff9800;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+input[type="radio"]:checked + label {
+  background-color: #ff9800;
+  color: white;
+}
+input[type="radio"]:checked + label:before {
+  height: 10px;
+  width: 10px;
+  border: 3px solid white;
+  background-color: #ff9800;
+}
+
+/* =====================================BUTTON================================== */
+/* =====================================BUTTON================================== */
+.m-button {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 2rem;
+  /* border: 4px solid red; */
+  justify-content: center;
+  align-items: flex-start;
+}
+.round {
+  font-size: 11pt;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 7rem;
+  cursor: pointer;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+
+#submit-button {
+  font-weight: 600;
+  display: none;
+}
+
+/* =====================================END BUTTON================================== */
+/* ===================================== RESPONSIVE ================================== */
+@media (max-width: 669px) {
+  .main-container {
+    height: auto;
+  }
+  .container {
+    padding-bottom: 2rem;
+    width: 30rem;
+  }
+  .form {
+    height: auto;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: 23rem;
+  }
+  .q1 {
+    font-size: 12pt;
+    color: rgb(67, 67, 67);
+    padding-bottom: 1rem;
+  }
+  .label-font {
+    font-size: 11pt;
+    letter-spacing: 1px;
+  }
+  .round {
+    letter-spacing: 1px;
+    font-size: 11pt;
+    width: 6rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .main-container {
+    height: auto;
+  }
+  .container {
+    height: auto;
+    width: 17rem;
+    padding-bottom: 0px;
+  }
+  .form {
+    height: auto;
+  }
+  .q {
+    font-size: 11pt;
+    color: rgb(67, 67, 67);
+  }
+  .input-box {
+    width: 100%;
+  }
+  .input-box label {
+    width: 100%;
+  }
+  label:before {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .label-font {
+    font-size: 9pt;
+    letter-spacing: 1px;
+  }
+  .m-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 32rem;
+  }
+  .round {
+    letter-spacing: 1px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 9pt;
+    width: 11.9rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .container {
+    height: 42rem;
+    width: 17rem;
+  }
+  .form {
+    height: auto;
+  }
+  .q1 {
+    font-size: 11pt;
+    color: rgb(67, 67, 67);
+  }
+  .input-box {
+    width: 100%;
+  }
+  label {
+    width: 11.9rem;
+  }
+  label:before {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .label-font {
+    font-size: 9pt;
+    letter-spacing: 1px;
+  }
+  .m-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .round {
+    letter-spacing: 1px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 9pt;
+    width: 11.9rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    height: 43rem;
+    width: 15rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .form {
+    height: auto;
+  }
+  .q1 {
+    font-size: 11pt;
+    color: rgb(67, 67, 67);
+  }
+  .input-box {
+    width: 100%;
+  }
+  label {
+    width: 11.9rem;
+  }
+  label:before {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .label-font {
+    font-size: 9pt;
+    letter-spacing: 1px;
+  }
+  .m-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    top: 33rem;
+  }
+  .round {
+    letter-spacing: 1px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 9pt;
+    width: 11.9rem;
+  }
+}
+/* =================================== RESPONSIVE ENDS HERE ====================== */
